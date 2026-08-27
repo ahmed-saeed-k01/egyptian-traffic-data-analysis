@@ -1,0 +1,30 @@
+# Python
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Raw data
+data/raw/
+
+# Generated processed data
+data/processed/
