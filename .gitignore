@@ -14,17 +14,24 @@ __pycache__/
 .idea/
 .vscode/
 
-# Environment / secrets
+# Environment and secrets
 .env
 .env.*
 
-# Logs / temporary files
+# Logs and temporary files
 *.log
 *.tmp
 *.temp
 
-# Raw data
-data/raw/
+# Private project data
+data/
 
-# Generated processed data
-data/processed/
+# Generated temporary outputs
+outputs/
+
+# Generated reports from private data
+reports/
+
+# OS files
+Thumbs.db
+Desktop.ini
