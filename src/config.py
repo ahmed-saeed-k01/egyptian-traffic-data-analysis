@@ -128,6 +128,28 @@ SUPPORTED_EXTENSIONS = frozenset(
     | PDF_EXTENSIONS
 )
 
+# Reference files used by downstream mapping, standardization,
+# and validation stages. These are intentionally separate from
+# the raw-source extension allow-list above.
+REFERENCE_EXCEL_EXTENSIONS = {
+    '.xlsx',
+}
+
+REFERENCE_JSON_EXTENSIONS = {
+    '.json',
+}
+
+REFERENCE_SUPPORTED_EXTENSIONS = frozenset(
+    REFERENCE_EXCEL_EXTENSIONS
+    | REFERENCE_JSON_EXTENSIONS
+)
+
+REFERENCE_MANIFEST_PATH = (
+    INVENTORY_REPORTS_DIR / 'reference_manifest.csv'
+)
+
+REFERENCE_MANIFEST_SCHEMA_VERSION = '1.0'
+
 
 # ============================================================
 # Structural Scan Settings
